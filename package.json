@@ -1,0 +1,43 @@
+{
+  "name": "k-eventbus",
+  "version": "1.0.0",
+  "description": "Event Emitter / pubsub",
+  "main": "dist/keventbus.js",
+  "scripts": {
+    "test": "mocha test/index_test.ts"
+  },
+  "repository": "kinzaz/k-eventbus",
+  "author": "kinzaz",
+  "license": "MIT",
+  "keywords": [
+    "events",
+    "eventemitter",
+    "emitter",
+    "pubsub"
+  ],
+  "devDependencies": {
+    "@types/chai": "^5.0.0",
+    "@types/mocha": "^10.0.8",
+    "@types/sinon": "^17.0.3",
+    "@types/sinon-chai": "^4.0.0",
+    "chai": "^5.1.1",
+    "esm": "^3.2.25",
+    "mocha": "^10.7.3",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "mocha": {
+    "extension": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register",
+      "esm"
+    ],
+    "spec": [
+      "test/*_test.ts"
+    ]
+  }
+}
